@@ -1,0 +1,517 @@
+/* ========================
+   RESET & BASE
+======================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ========================
+   NAVBAR
+======================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00ffd1;
+}
+.logo {
+  color: #00ffd1;
+  font-weight: 750;
+  padding: 0;   
+  font-size: xx-large;           /* Remove old padding */
+  margin-left: 50px;       /* Push logo in from the left */
+  margin-right: 30px;      /* Add space after logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: large;
+  margin-right: 70px;   /* Optional: add right margin for breathing room */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  position: fixed;    /* 👈 makes it fixed */
+  top: 0;             /* stick to top */
+  left: 0;            /* stick to left */
+  width: 100%;        /* full width */
+  background: #000000;   /* make sure it has a background */
+  z-index: 1000;      /* stays on top of everything else */
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-role {
+  font-size: 1.5rem;
+  margin: 10px 0 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.secondary-btn {
+  background: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffd1;
+}
+
+/* ========================
+   ABOUT SECTION
+======================== */
+.about-section {
+  padding: 100px 40px;
+  text-align: center;
+  background: #0a0a0a; /* Slightly lighter than #000 */
+}
+
+.about-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.about-content .intro {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.about-content .description {
+  font-size: large;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  color: rgb(233, 203, 163);
+}
+
+.about-content .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.feature {
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+./* Frontend Feature Color */
+.feature.frontend h3 {
+  color: #42a5f5; /* Light blue for Frontend title */
+}
+
+.feature.frontend .feature-icon i {
+  color: #42a5f5; /* Match icon */
+}
+
+/* UI/UX Feature Color */
+.feature.uiux h3 {
+  color: #ff61f6; /* Pink for UI/UX title */
+}
+
+.feature.uiux .feature-icon i {
+  color: #ff61f6; /* Match icon */
+}
+
+
+/* General icon style */
+.feature-icon i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* ========================
+   SKILLS SECTION
+======================== */
+.skills-section {
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #00ffd1;
+}
+
+.skills-category {
+  margin-bottom: 60px; /* Space between categories */
+}
+
+.uiux-category {
+  margin-top: 80px; /* Extra top space only for UI/UX block */
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+.skill-item i {
+  font-size: 4rem;  /* Increased from 3rem to 4rem */
+  margin-bottom: 12px;
+}
+
+.skill-item span {
+  margin-top: 8px;
+  font-size: 1.1rem;  /* Increased from 0.95rem to 1.1rem */
+  font-weight: 500;   /* Optional: make the text a bit bolder */
+}
+.skills-category h3 {
+  font-size: 1.5rem;   /* Increase heading size from 1.5rem (default) */
+  margin-bottom: 25px;
+  color: #42a5f5;    /* Optional: highlight with your accent color */
+  font-weight: 600;  /* Optional: make headings bolder */
+}
+
+/* Frontend Skill Colors */
+.skill-item.html i { color: #e44d26; }     /* HTML */
+.skill-item.css i { color: #264de4; }      /* CSS */
+.skill-item.js i { color: #f7df1e; }       /* JavaScript */
+.skill-item.react i { color: #61dafb; }    /* React */
+.skill-item.node i { color: #3c873a; }     /* Node.js */
+.skill-item.mongo i { color: #47a248; }    /* MongoDB */
+.skill-item.next i { color: #ffffff; }     /* Next.js (typically white on dark) */
+
+/* UI/UX Skills Colors */
+.skill-item.figma i { color: #f24e1e; }    /* Figma */
+.skill-item.adobe i { color: #ff61f6; }    /* Adobe XD (pink/magenta) */
+.skill-item.design i { color: #00ffd1; }   /* General Design Icon */
+
+
+
+
+/* ========================
+   PROJECTS SECTION
+======================== */
+.projects-section {
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  text-align: left;
+  padding: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: #42a5f5;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-card .tags {
+  margin-bottom: 15px;
+}
+
+.project-card .tags span {
+  display: inline-block;
+  background: #444;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.project-links .btn {
+  font-size: 0.85rem;
+  padding: 8px 15px;
+  margin-right: 10px;
+}
+
+/* ========================
+   EXPERIENCE SECTION
+======================== */
+.experience-section {
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+  backdrop-filter: blur(5px);
+}
+
+.experience-card h3 {
+  color: #42a5f5;
+  margin-bottom: 5px;
+}
+
+.experience-card .company {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.experience-card .duration {
+  color: #bbb;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========================
+   CONTACT SECTION
+======================== */
+.contact-section {
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-section .contact-intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  cursor: pointer;
+}
+
+.contact-section .social-icons {
+  margin-top: 20px;
+}
+
+.contact-section .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.contact-section .social-icons a:hover {
+  color: #00ffd1;
+}
+
+/* ========================
+   ANIMATIONS
+======================== */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+.about-section,
+.skills-section,
+.projects-section,
+.experience-section,
+.contact-section {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero {
+  animation-delay: 0.2s;
+}
+
+.about-section {
+  animation-delay: 0.4s;
+}
+
+.skills-section {
+  animation-delay: 0.6s;
+}
+
+.projects-section {
+  animation-delay: 0.8s;
+}
+
+.experience-section {
+  animation-delay: 1s;
+}
+
+.contact-section {
+  animation-delay: 1.2s;
+}
